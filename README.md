@@ -4,19 +4,19 @@
 
 This Django application receives data from an account and sends it to multiple destinations based on webhook URLs. The received data is stored in the database before being forwarded.
 
-## Setup
+## Setup by cloning the repo
 
 1. Clone the repository and navigate to the project directory.
 
     ```bash
     git clone <repository_url>
-    cd data_pusher
+    cd CustomerLabs
     ```
 
 2. Create and activate a virtual environment.
 
     ```bash
-    python -m venv venv
+    python -m venv env
     source venv/bin/activate  # On Windows use `venv\Scripts\activate`
     ```
 
@@ -39,6 +39,14 @@ This Django application receives data from an account and sends it to multiple d
     python manage.py runserver
     ```
 
+## Setup using docker
+
+1. Run the following commands in a terminal:
+
+    ```bash
+    docker compose up
+    ```
+
 ## API Endpoints
 
 ### Account Endpoints
@@ -52,8 +60,6 @@ This Django application receives data from an account and sends it to multiple d
 
 - **Create Destination**: `POST /api/destinations/`
 - **Retrieve Destination**: `GET /api/destinations/{destination_id}/`
-- **Update Destination**: `PUT /api/destinations/{destination_id}/`
-- **Delete Destination**: `DELETE /api/destinations/{destination_id}/`
 
 ### Incoming Data Endpoint
 
