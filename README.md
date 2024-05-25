@@ -46,6 +46,9 @@ This Django application receives data from an account and sends it to multiple d
     ```bash
     docker compose up
     ```
+## Swagger UI
+
+Now go to http://127.0.0.1:8000/api/docs
 
 ## API Endpoints
 
