@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+
+    api:
+        build: .
+        env_file: .env
+        container_name: customerlabs
+        ports:
+            - "8000:8000"

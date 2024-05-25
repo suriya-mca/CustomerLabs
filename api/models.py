@@ -2,8 +2,8 @@ import uuid
 import secrets
 from django.db import models
 
-
 class Account(models.Model):
+
     email = models.EmailField(unique=True)
     account_id = models.UUIDField(default=uuid.uuid4, unique=True, editable=False)
     account_name = models.CharField(max_length=50)
@@ -19,6 +19,7 @@ class Account(models.Model):
         return self.account_name
 
 class Destination(models.Model):
+    
     account = models.ForeignKey(Account, related_name='destinations', on_delete=models.CASCADE)
     url = models.CharField()
     http_method = models.CharField(max_length=10, choices=[('GET', 'GET'), ('POST', 'POST'), ('PUT', 'PUT')])
