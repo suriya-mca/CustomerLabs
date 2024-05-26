@@ -54,16 +54,16 @@ Now go to http://127.0.0.1:8000/api/docs
 
 ### Account Endpoints
 
-- **Create Account**: `POST /api/accounts/`
-- **Retrieve Account**: `GET /api/accounts/{account_id}/`
-- **Update Account**: `PUT /api/accounts/{account_id}/`
-- **Delete Account**: `DELETE /api/accounts/{account_id}/`
+- **Create Account**: `POST /api/v1/accounts/`
+- **Retrieve Account**: `GET /api/v1/accounts/{account_id}/`
+- **Update Account**: `PUT /api/v1/accounts/{account_id}/`
+- **Delete Account**: `DELETE /api/v1/accounts/{account_id}/`
 
 ### Destination Endpoints
 
-- **Create Destination**: `POST /api/destinations/`
-- **Retrieve Destination**: `GET /api/destinations/{destination_id}/`
+- **Create Destination**: `POST /api/v1/destinations/`
+- **Retrieve Destination**: `GET /api/v1/destinations/{destination_id}/`
 
 ### Incoming Data Endpoint
 
-- **Receive Data**: `POST /api/server/incoming_data`
+- **Receive Data**: `POST /api/v1/server/incoming_data`
